@@ -1,7 +1,7 @@
-name = "I am nika"
+name = "nika"
 surname = "kurtanidze"
-age = "years 15"
-height = "1,78 heights"
+age = 15
+height = 1.78
 
 
-print(name + " " + surname + " " + str(15) + " " + str(height))
+print("I am " + name + " " + surname + " " + str(age) + " years old " + "my heigh is " + str(height))
