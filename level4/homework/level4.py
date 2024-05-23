@@ -2,6 +2,8 @@ from turtle import *
 
 speed(30)
 width(5)
+color("grey")
+begin_fill()
 forward (300)
 left(90)
 
@@ -87,8 +89,10 @@ right(90)
 
 forward (50)
 right(90)
-
 forward (70)
+end_fill()
+
+
 penup()
 goto(100,230)
 pendown()
@@ -155,6 +159,7 @@ forward (25)
 left(90)
 forward(20)
 
+color("black")
 penup()
 goto(0,-20)
 pendown()
