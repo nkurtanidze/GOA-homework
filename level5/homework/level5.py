@@ -1,10 +1,10 @@
 # დავალებე 2
 
 # შევქმენი ცვლადები სადაც შევინახე ჩემს თავზე ინფორმაცია
-name = "nika"
-surname = "kurtanidze"
-age = 15 
-address = "gumathesis street"
+name = "nika"  # ჩემი სახელი
+surname = "kurtanidze"   # ჩემი გვარი
+age = 15    #ჩემი წლოვანება
+address = "gumathesis street"  # ჩემი მისამართი
 print("I am " + name + " " + surname + " " + str(age) + " years old " + " I live " + address)
 
 # დავალება 3

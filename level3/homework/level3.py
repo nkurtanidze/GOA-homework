@@ -15,4 +15,5 @@ print(num1 / num2)      # გავყაბით რიცხვები
 # შევქმენით 2 ცვლადი
 number1 = 10
 number2 = 5
-print(number1 + number2)
+print(number1 + number2)    # შევკრიბე რიცხვები
+
