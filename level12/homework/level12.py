@@ -49,18 +49,18 @@
 
 # extreme
 # 4
-a = 7
-b = 10
-c = 5
-if a + b > c:
+num1 = int(input("please enter first"))
+num2 = int(input("please enter second"))
+num3 = int(input("please enter third"))
+if num1 + num2 > num3:
    7 + 10 > 5
    17 > 5
    print("true")
-elif a + c > b:
+elif num1 + num3 > num2:
   7 + 5 > 10
   12 > 10
   print("true")
-elif b + c > a:
+elif num2 + num3 > num1:
   10 + 5 > 7
   15 > 7
   print("true")
