@@ -1,202 +1,208 @@
-# davaleba 1
-# for loop
-# 1
-for i in  range(0, 20 + 1):
-    print(i)
+# # davaleba 1
+# # for loop
+# # 1
+# for i in  range(0, 21):
+#     print(i)
 
-# 2
-for i in range(1, 10):
-    print(i)
+# # 2
+# for i in range(1, 10):
+#     print(i)
 
-# 3
-for i in range(0, 101, 2):     # luwi
-    print(i)
+# # 3
+# for i in range(0, 101, 2):     # luwi
+#     print(i)
 
-for i in range(1, 101, 2):    # kenti
-    print(i)
-
-
-# 4
-age = 10
-sum = 0
-for i in range(0, 10):
-    sum = sum + i
-    print(sum)
+# for i in range(1, 101, 2):    # kenti
+#     print(i)
 
 
-# 5
-for i in range(5, 51, 5):
-    print(i)
+# # 4
+# age = 10
+# sum = 0
+# for i in range(0, 10):
+#     sum = sum + i
+#     print(sum)
 
 
-
-
-
-# while loop
-# 1
-age = 0
-while age < 20:
-    print(age)
-    age += 2
-
-
-# 2
-age = 1
-some = 0
-while age < 10:
-    some = age + 1
-    print(age)
-
-
-# 3
-number = 7
-while int(input("please enter number")):
-    if number > 0 and number < 10:
-        print("you win !")
-    else:
-        print("please try again")
-
-
-# 5
-password = "password123"
-while input("please enter password"):
-    if password == "password123":
-        print("you win !")
-    else:
-        print("please try again")
+# # 5
+# for i in range(5, 51, 5):
+#     print(i)
 
 
 
 
-# if - else
-# 1
-clock = 12
-if clock < 12:
-    print("good morning")
-else:
-    print("good afternoon")
+
+# # while loop
+# # 1
+# age = 0
+# while age < 20:
+#     print(age)
+#     age += 2
 
 
-# 2
-num = 45
-if num == "even":
-    print("odd")
-else:
-    print("even")
+# # 2
+# age = 1
+# some = 0
+# while age < 10:
+#     some = some + age
+# print(some)
 
 
-# 3
-temperature = 30
-if temperature > 30:
-    print("hot outside !")
-else:
-    print("it's not to hot !")
+# # 3
+# number = 7
+# user_number = None
+# while user_number != number:
+#     user_number = int(input("please enter number"))
+#     if user_number == number:
+#         print("you win !")
+#     else:
+#         print("please try again")
 
 
-# 4
-score = 50
-if score >= 50:
-    print("passed")
-else:
-    print("failed")
-
-
-# 5
-age = 13
-if age >= 13 and age < 19:
-    print("you are a teenager")
-else:
-    print("you are not a teenager")
+# # 5
+# password = "password123"
+# user_password = None
+# while user_password != password:
+#     user_password = input("please enter password")
+#     if user_password == password:
+#         print("you win !")
+#     else:
+#         print("please try again")
 
 
 
 
-# davaleba 2
-# for loop
-# 1
-for i in range(1, 51, 2):
-    print(i)
+# # if - else
+# # 1
+# clock = 12
+# if clock < 12:
+#     print("good morning")
+# else:
+#     print("good afternoon")
 
 
-# 2
-for i in range(2, 15, 2):
-    print(i)
-
-for i in range(3, 15, 3):
-    print(i)
-
-for i in range(4, 15, 4):
-    print(i)
-
-for i in range(5, 15, 5):
-    print(i)
-
-for i in range(6, 15, 6):
-    print(i)
-
-for i in range(7, 15, 7):
-    print(i)
-
-for i in range(8, 15, 8):
-    print(i)
-
-for i in range(9, 15, 9):
-    print(i)
-
-for i in range(10, 15, 10):
-    print(i)
-
-for i in range(11, 15, 11):
-    print(i)
-
-for i in range(12, 15, 12):
-    print(i)
-
-for i in range(13, 15, 13):
-    print(i)
-
-for i in range(14, 15, 14):
-    print(i)
+# # 2
+# num = 45
+# if num % 2 == 0:
+#     print("even")
+# else:
+#     print("odd")
 
 
-# 3
-num = 3
-for i in range(3):
-    print(i)
+# # 3
+# temperature = 30
+# if temperature > 30:
+#     print("hot outside !")
+# else:
+#     print("it's not to hot !")
 
 
-# 4
-for i in range(3, 101, 3):
-    print(i)
+# # 4
+# age = 13
+# if 13 < age < 19:
+#     print("you are a teenager")
+# else:
+#     print("you are not a teenager")
 
-for i in range(5, 101, 5):
-    print(i)
 
 
+
+# # davaleba 2
+# # for loop
+# # 1
+# sum = 0 
+# for i in range(1, 10):
+#     sum = sum + i
+# print(sum)
+
+
+# # 2
+# for i in range(1, 15):
+#     print(i**2)
+
+
+# # 3
+# sum = 0
+# for i in range(1, 5):
+#     sum = sum + i**2
+# print(sum)
+
+
+# # 4
+# for i in range(1, 101):
+#     if i % 3 == 0 and i % 5 == 0:
+#         print(i)
+
+
+# # 5
+# for i in range(10, 0, -1):
+#     print(i)
 
 
 
 # while loop
 # 1
-num = 0
-while num < 50:
-    print(num)
+# num = int(input("please enter num"))
+# num2 = 1
+# sum = 0
+# while num2 < num:
+#     sum = sum + num2
+#     num2 = num2 + 1
+# print(sum)
 
 
-# 3
-sum = 0
-num = 1
-while num <= 10:
-    sum = sum + num
-    print(sum)
+# # 2
+# num = 10
+# while num > 1:
+#     num = num - 1
+#     print(num)
+
+
+# # 3
+# sum = 0
+# num = 1
+# while num < 100:
+#     sum = sum + num
+#     num = num + 1
+# print(sum)
 
 
 
+# # 4
+# num = 1
+# while num < 10:
+#     print(num**2)
+#     num = num + 1
 
-# if - else
-# 1
-year = 2008
-if year <= 200000:
-    print("YES")
-else:
-    print("NO")
+
+# # if - else
+# # 1
+# year = 2008
+# if year % 4 == 0:
+#     print("YES")
+# else:
+#     print("NO")
+
+# # 2
+# user_word = input("please enter word: ")
+# if user_word == user_word[::-1]:
+#     print("it is palendrom")
+# else:
+#     print("it is not palendrom")
+
+
+# # 3
+# user_number = int(input("please enter number"))
+# if user_number > 0:
+#     print("positive")
+# elif user_number == 0:
+#     print("zero")
+# else:
+#     print("negative")
+
+
+# 4
+height = 176
+weight = 110
+if weight< 185:
+    print("underweight")
