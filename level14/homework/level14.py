@@ -42,7 +42,9 @@ while age < 20:
 
 # 2
 age = 1
+some = 0
 while age < 10:
+    some = age + 1
     print(age)
 
 
