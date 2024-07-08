@@ -199,10 +199,3 @@
 #     print("zero")
 # else:
 #     print("negative")
-
-
-# 4
-height = 176
-weight = 110
-if weight< 185:
-    print("underweight")

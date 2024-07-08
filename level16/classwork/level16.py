@@ -18,5 +18,5 @@ print(cars)
 
 cars = ["BMW", "Mercedes", "Pagan", "Ferari"]
 cars.index("BMW")
-cars.len(cars[1])
+print(len(cars))
 print(cars.count("BMW"))
