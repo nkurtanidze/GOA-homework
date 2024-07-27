@@ -1,0 +1,32 @@
+1 უყურეთ დღევანდელ გაკვეთილს და გაიმეორეთ ყველაფერი ჩემთან ერთად აგრეთვე შექმენით ტექსტური დოკუმენტი და ახსენით რა არის git github აგრეთვე ახსენით ყველა git ის ბრძანება რომელსაც ვიყენებთ ვერსიების კონტროლი და რეპოზიტორიაში ასატვირთად
+
+Git: Git is a distributed version control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows. 
+
+GitHub: GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. 
+
+
+git add:
+Use git add to files to the staging area. You can recursively stage changes from the current working directory with git add ., or stage all changes in the Git repository with git add --all.
+
+git checkout:
+Use git checkout to switch to a specific branch. To create a new branch and switch to it, use git checkout -b <branch_name>.
+
+git commit:
+Use git commit to commits staged changes to the repository. If the commit message contains a blank line, the first line becomes the commit subject while the remainder becomes the commit body. Use the subject to briefly summarize a change, and the commit body to provide additional details.
+Use git commit --amend to modify the most recent commit.
+
+git init:
+Use git init to initialize a directory so Git tracks it as a repository. A .git file with configuration and log files is added to the directory. You shouldn’t edit the .git file directly.
+The default branch is set to master. You can change the name of the default branch with git branch -m <branch_name>, or initialize with git init -b <branch_name>.
+
+git push:
+Use git push to update remote refs. 
+
+git log:
+To display a list of commits in chronological order, use git log.
+
+git reset:
+To undo a commit, use git reset to rewind the commit history and continue on from an earlier commit.
+
+git status:
+Use git status to show the status of working directory and staged files.
