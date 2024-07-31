@@ -1,0 +1,25 @@
+body {
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+form {
+    font-size: large;
+}
+
+input {
+    font-size: 30px;
+}
+
+button {
+    box-shadow: 5px 2px purple(108, 108, 199);
+}
