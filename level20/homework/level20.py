@@ -53,6 +53,20 @@ vowels_in_string(vowels, string)
 
 
 # 6. Create a function that accepts a list of integers and returns the list sorted in ascending order without using built-in sort functions.
+def manual_sort(int_list):
+    for i in range(len(int_list)):
+        for x in range(i):
+            if int_list[x] > int_list[i]:
+                smaller = int_list[i]
+                bigger = int_list[x]
+                int_list[i] = bigger
+                int_list[x] = smaller
+
+    
+    return int_list
+
+print(manual_sort([10, 14, 20, 12, 11, 3, 4, 1, 23]))
+
 
 # 7. Implement a function that takes two strings and returns True if one string is a permutation of the other.
 name = "nika"
