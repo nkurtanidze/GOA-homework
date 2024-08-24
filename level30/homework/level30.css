@@ -1,0 +1,28 @@
+link:active {
+    color: blue;
+    font-family: line-through;
+}
+
+link:visited {
+    color: brown;
+    font-family: line-through;
+}
+
+p {
+    color: darkblue;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
