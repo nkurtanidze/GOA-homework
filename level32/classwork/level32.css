@@ -1,0 +1,26 @@
+/* davaleba 1 */
+
+div {
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+  }
+
+/* davaleba 3 */
+
+.parent {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.child {
+    width: 70px;
+    height: 50px;
+    border-radius: 5px;
+}
