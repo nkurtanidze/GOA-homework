@@ -1,0 +1,78 @@
+/* davaleba 2*/
+#conteiner {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+#conteiner:hover {
+    transform: translate(50px, -50px);
+}
+
+#conteiner:active{
+    transform: translate(50px, 50px);
+}
+
+/* davaleba 3 */
+#conteiner {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+#conteiner:hover {
+    transform: translate(50px, -50px) scale(2);
+}
+
+#conteiner:active{
+    transform: translate(50px, 50px) scale(0.5);
+}
+
+/* davaleba 4 */
+#conteiner {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+#conteiner:hover {
+    transform:rotate(45deg)
+}
+
+#conteiner:active{
+    transform:rotate(-45deg)
+}
+
+/* davaleba 5 1) ელემენტის როტაცია
+
+შექმენი კვადრატი და გამოიყენე transform: rotate(45deg) იმისათვის, რომ იგი 45 გრადუსით დაატრიალო.
+2) ელემენტის მასშტაბირება
+
+შექმენი კვადრატი და გამოიყენე transform: scale(1.5) იმისათვის, რომ ელემენტი 1.5-ჯერ გაზარდო.
+3) ელემენტის გადანაცვლება
+
+გადაანაცვლე ელემენტი X და Y ღერძებზე, გამოიყენე transform: translate(50px, 30px).*/
+#conteiner {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+#conteiner:hover {
+    transform:translate(50px, 30px), rotate(45deg), scale(1.5)
+}
+
+/* davaleba 6 */
+#conteiner {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+#conteiner:hover {
+    transform:rotate(45deg)
+}
+
+#conteiner:active{
+    transform:rotate(-45deg)
+}

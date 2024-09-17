@@ -1,0 +1,14 @@
+#conteiner {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+#conteiner:hover {
+    transform:translate(50px, 30px), rotate(45deg), scale(1.5)
+}
+
+
+#conteiner:active{
+    transform: translate(-50px, -50px), rotate(50deg), scale(2);
+}
