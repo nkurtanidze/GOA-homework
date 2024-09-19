@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+div {
+    background-color: red;
+    width: 500px;
+    height: 500px;
+
+    /* ვრცელი გზა */
+    transition-property: background-color, transform;
+    transition-duration: 1s, 2s;
+    transition-timing-function: ease-out, ease;
+    transition-delay: 2s, 0.25s;
+}
+
+div:hover {
+    background-color: green;
+    transform: rotate(30deg);
+}

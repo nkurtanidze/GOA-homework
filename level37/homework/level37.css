@@ -5,10 +5,10 @@
 }
 
 #conteiner:hover {
-    transform:translate(50px, 30px), rotate(45deg), scale(1.5)
+    transform:translate(50px, 30px) rotate(45deg) scale(1.5)
 }
 
 
 #conteiner:active{
-    transform: translate(-50px, -50px), rotate(50deg), scale(2);
+    transform: translate(-50px, -50px) rotate(50deg) scale(2);
 }
