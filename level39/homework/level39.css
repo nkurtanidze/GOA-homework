@@ -1,0 +1,22 @@
+* body {
+    background-color: var(--body-color);
+}
+
+:root {
+    --body-color: black;
+    --form-color:black;
+}
+
+form {
+    background-color: var(--form-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 3px;
+}
+
+#london {
+    color: yellow;
+}

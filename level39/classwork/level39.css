@@ -1,0 +1,74 @@
+*  header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: red;
+    background-color: black;
+}
+
+body {
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 50px;
+}
+@media (max-width:2000px) {
+    header{
+        gap: 40px;
+    }
+}
+
+@media (max-width:1500px) {
+    header{
+        gap: 30px;
+    }
+}
+
+@media (max-width:1000px) {
+    header{
+        gap: 20px;
+        visibility: hidden;
+    }
+}
+
+@media (max-width:500px) {
+    header{
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+/* davaleba 2 */
+
+:root {
+    --first-feri:red;
+    --second-feri:red;
+    --third-feri:red;
+}
+
+body {
+    background-color: var(--first-feri);
+}
+
+header {
+    background-color: var(--second-feri);
+    padding: 10px;
+}
+
+nav {
+    background-color: var(--third-feri);
+}
+
+/* davaleba 4 */
+
+div {
+    transform: rotate(30deg);
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
