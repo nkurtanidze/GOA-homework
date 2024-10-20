@@ -1,1 +1,1 @@
-# ar gqonda saklaso davaleba
+print("no classwork")
