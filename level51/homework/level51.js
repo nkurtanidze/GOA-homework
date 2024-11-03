@@ -53,3 +53,27 @@ function diagonalSums(matrix) {
     return [primarySum, secondarySum];
 }
 console.log(diagonalSums(matrix));
+
+
+
+
+
+// davaleba 5
+function RowAndColumnSums(matrix) {
+    const rowSums = [];
+    const colSums = Array(matrix.length).fill(0);
+
+    for (let i = 0; i < matrix.length; i++) {
+        let rowSum = 0;
+        for (let j = 0; j < matrix[i].length; j++) {
+            rowSum += matrix[i][j];
+            colSums[j] += matrix[i][j];
+        }
+        rowSums.push(rowSum);
+    }
+
+    return { rowSums, colSums };
+}
+const result = RowAndColumnSums(matrix);
+console.log("Row Sums:", result.rowSums); // [6, 15, 24]
+console.log("Column Sums:", result.colSums); // [12, 15, 18]
