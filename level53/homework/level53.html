@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ka">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ფიგურის ფართობის გამოთვლა</title>
+    </head>
+    <body>
+        <h2>ფიგურის ფართობის გამოთვლა</h2>
+
+        <label for="shape">აირჩიეთ ფიგურა:</label>
+        <select id="shape" onchange="updateInputs()">
+            <option value="circle">წრე</option>
+            <option value="rectangle">მართკუთხედი</option>
+            <option value="triangle">სამკუთხედი</option>
+        </select>
+
+        <div id="circleInputs" style="display: none;">
+            <label>რადიუსი:</label>
+            <input type="number" id="radius" step="any">
+        </div>
+
+        <div id="rectangleInputs" style="display: none;">
+            <label>სიგანე:</label>
+            <input type="number" id="width" step="any">
+            <label>სიმაღლე:</label>
+            <input type="number" id="height" step="any">
+        </div>
+
+        <div id="triangleInputs" style="display: none;">
+            <label>გვერდი a:</label>
+            <input type="number" id="sideA" step="any">
+            <label>გვერდი b:</label>
+            <input type="number" id="sideB" step="any">
+            <label>გვერდი c:</label>
+            <input type="number" id="sideC" step="any">
+        </div>
+
+        <button onclick="countArea()">გამოთვლა</button>
+
+        <p id="result">ფართობი: </p>
+
+        <script src="./level53.js" defer></script>
+    </body>
+</html>
