@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კალკულატორი</title>
+    <script src="./level55.js"></script>
+</head>
+<body>
+    <h1>მარტივი კალკულატორი</h1>
+    <label for="num1">პირველი რიცხვი:</label>
+    <input type="number" id="num1"><br><br>
+    
+    <label for="num2">მეორე რიცხვი:</label>
+    <input type="number" id="num2"><br><br>
+    
+    <label for="operation">აირჩიეთ ოპერაცია:</label>
+    <select id="operation">
+        <option value="მიმატება">მიმატება</option>
+        <option value="გამოკლება">გამოკლება</option>
+    </select><br><br>
+    
+    <button onclick="calculate()">გამოთვლა</button>
+    
+    <h2 id="result">შედეგი:</h2>
+</body>
+</html>
