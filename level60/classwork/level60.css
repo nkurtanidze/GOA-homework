@@ -1,0 +1,14 @@
+*  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.large-text {
+    font-size: 24px;
+}
+.long-text {
+    max-width: 800px;
+}
