@@ -1,0 +1,37 @@
+/* davaleba 1 */
+*      body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+#display {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+input {
+    width: 100px;
+    padding: 5px;
+    font-size: 1rem;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+/* davaleba 3 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+#message-box {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+    display: none;
+}
