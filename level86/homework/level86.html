@@ -1,0 +1,134 @@
+<!-- davaleba 2 -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Divs</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <= 10; i++) {
+            let div = document.createElement("div");
+            div.id = "box" + i;
+            div.className = "box";
+            div.innerText = "Div " + i;
+            document.body.appendChild(div);
+        }
+
+        for (let i = 1; i <= 10; i++) {
+            let div = document.getElementById("box" + i);
+            div.style.backgroundColor = `hsl(${i * 36}, 70%, 60%)`;
+            div.style.color = "white";
+            div.style.border = "2px solid black";
+            div.style.borderRadius = "10px";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- davaleba 3 -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Divs</title>
+    <style>
+        .styled-div {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const body = document.body;
+
+        for (let i = 1; i <= 10; i++) {
+            let div = document.createElement("div");
+            div.classList.add("styled-div");
+            div.textContent = `Div ${i}`;
+            body.appendChild(div);
+        }
+
+        document.querySelectorAll(".styled-div").forEach((div, index) => {
+            div.style.backgroundColor = `hsl(${index * 36}, 70%, 60%)`;
+            div.style.color = "white";
+            div.style.fontSize = "16px";
+            div.style.boxShadow = "2px 2px 5px rgba(0, 0, 0, 0.3)";
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- davaleba 4 -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სტილიზებული DIV-ები</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .styled-div {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <= 10; i++) {
+            let div = document.createElement("div");
+            div.className = "styled-div";
+            div.textContent = "Div " + i;
+            div.style.backgroundColor = `hsl(${i * 36}, 70%, 60%)`;
+            div.style.color = "white";
+            div.style.boxShadow = "3px 3px 10px rgba(0, 0, 0, 0.2)";
+            document.body.appendChild(div);
+        }
+    </script>
+</body>
+</html>
