@@ -1,0 +1,106 @@
+<!-- davaleba 1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Highlight Child</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .child {
+      width: 100px;
+      height: 100px;
+      background-color: lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background-color: cornflowerblue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+  </div>
+
+  <input type="number" id="childNumber" min="1" max="4" placeholder="Enter child number">
+  <button onclick="highlightChild()">Highlight</button>
+
+  <script src="./level94.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- davaleba 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check Div Content</title>
+  <style>
+    .my-div {
+      width: 200px;
+      height: 100px;
+      border: 2px solid #000;
+      margin: 10px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="my-div" id="div1">Hello!</div>
+  <div class="my-div" id="div2"></div>
+  <div class="my-div" id="div3">
+    <p>This is a paragraph inside div3</p>
+  </div>
+
+  <script src="./level94.js"></script>
+
+</body>
+</html>
+
+
+
+
+<!-- davaleba 3 -->
+<div id="container">
+    <div class="child">Child 1</div>
+    <div class="child">Child 2</div>
+    <div class="child">Child 3</div>
+    <div class="child">Child 4</div>
+</div>
+
+<script src="./level94.js"></script>
+
+
+
+
+<!-- davaleba 5 -->
+<div id="container">
+  <p>პარაგრაფი 1</p>
+  <p>პარაგრაფი 2</p>
+  <p>პარაგრაფი 3</p>
+  <button onclick="changeColor()">დაწკაპეთ</button>
+</div>
+
+<script src="./level94.js"></script>
