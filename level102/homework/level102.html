@@ -1,0 +1,276 @@
+<!-- davaleba 1 -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Bubbling მაგალითი</title>
+  <style>
+    #parent {
+      padding: 40px;
+      border: 2px solid #333;
+      display: inline-block;
+    }
+
+    #child {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="parent">
+    მშობელი div
+    <br><br>
+    <button id="child">დაკლიკე ღილაკზე</button>
+  </div>
+
+</body>
+</html>
+
+
+
+<!-- davaleba 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Bubbling Example</title>
+  <style>
+    .outer {
+      padding: 40px;
+      background-color: lightcoral;
+    }
+    .middle {
+      padding: 30px;
+      background-color: lightseagreen;
+    }
+    .inner {
+      padding: 20px;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    Outer
+    <div class="middle">
+      Middle
+      <div class="inner">
+        Inner
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+<!-- davaleba 3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Bubbling Example</title>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+
+</body>
+</html>
+
+
+
+<!-- davaleba 4 -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Bubbling მაგალითი</title>
+  <style>
+    #parent {
+      padding: 50px;
+      background-color: lightblue;
+    }
+
+    #child {
+      padding: 30px;
+      background-color: lightgreen;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="parent">
+    მშობელი
+    <div id="child">შვილი</div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+<!-- davaleba 5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Bubbling Example</title>
+</head>
+<body>
+  <button id="outer">
+    Outer
+    <button id="middle">
+      Middle
+      <button id="inner">Inner</button>
+    </button>
+  </button>
+
+</body>
+</html>
+
+
+
+<!-- davaleba 6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capturing Example</title>
+  <style>
+    #outer {
+      width: 300px;
+      height: 300px;
+      background-color: lightblue;
+      padding: 30px;
+    }
+
+    #inner {
+      width: 100%;
+      height: 100%;
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="outer">
+    Outer DIV
+    <div id="inner">Inner DIV</div>
+  </div>
+
+</body>
+</html>
+
+
+
+<!-- davaleba 7 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capturing vs Bubbling</title>
+  <style>
+    #outerDiv {
+      padding: 50px;
+      background-color: lightblue;
+      width: 300px;
+      text-align: center;
+    }
+
+    #innerButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="outerDiv">
+    Outer DIV
+    <br>
+    <button id="innerButton">Click Me</button>
+  </div>
+
+</body>
+</html>
+
+
+
+
+<!-- davaleba 8 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capturing Example</title>
+  <style>
+    .outer {
+      padding: 40px;
+      background-color: lightblue;
+    }
+    .middle {
+      padding: 30px;
+      background-color: lightgreen;
+    }
+    .inner {
+      padding: 20px;
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+
+<div class="outer">
+  Outer
+  <div class="middle">
+    Middle
+    <div class="inner">
+      Inner
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+<!-- davaleba 9 -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>Capturing vs Bubbling Example</title>
+</head>
+<body>
+  <button id="myButton">დააჭირე მე</button>
+
+</body>
+</html>
+
+
+
+<!-- davaleba 10 -->
+ <!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8" />
+<title>Capturing vs Bubbling</title>
+</head>
+<body>
+
+<div id="parent" style="padding:20px; border: 2px solid blue;">
+  მშობელი div
+  <button id="child">ღილაკი</button>
+</div>
+
+</body>
+</html>

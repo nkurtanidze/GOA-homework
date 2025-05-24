@@ -1,0 +1,21 @@
+<!-- input -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input Event Example</title>
+</head>
+<body>
+  <input type="text" id="textInput" placeholder="Type something...">
+  <p id="inputResult"></p>
+
+  <script>
+    const input = document.getElementById('textInput');
+    const result = document.getElementById('inputResult');
+
+    input.addEventListener('input', function() {
+      result.textContent = "You typed: " + input.value;
+    });
+  </script>
+</body>
+</html>

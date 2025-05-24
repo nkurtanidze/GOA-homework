@@ -1,0 +1,21 @@
+<!-- click -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Event Example</title>
+</head>
+<body>
+  <button id="myButton">Click me!</button>
+  <p id="clickResult"></p>
+
+  <script>
+    const button = document.getElementById('myButton');
+    const result = document.getElementById('clickResult');
+
+    button.addEventListener('click', function() {
+      result.textContent = "Button was clicked!";
+    });
+  </script>
+</body>
+</html>
