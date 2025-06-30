@@ -1,0 +1,237 @@
+<!-- davaleba 1 -->
+<!-- temperature.html -->
+<div class="temperature-block">
+  <h2>🌡 Temperature</h2>
+  <p>Celsius: <span id="celsius-value"></span>°C</p>
+  <p>Fahrenheit: <span id="fahrenheit-value"></span>°F</p>
+</div>
+
+<style>
+  .temperature-block {
+    border: 2px solid #3498db;
+    padding: 16px;
+    border-radius: 12px;
+    width: 250px;
+    margin-bottom: 20px;
+    background: #ecf0f1;
+  }
+</style>
+
+<script>
+  class Temperature {
+    set celsius(value) {
+      this._celsius = value;
+      this._fahrenheit = (value * 9/5) + 32;
+    }
+
+    get celsius() {
+      return this._celsius;
+    }
+
+    get fahrenheit() {
+      return this._fahrenheit;
+    }
+  }
+  const temp = new Temperature();
+  temp.celsius = 25;
+  document.getElementById('celsius-value').textContent = temp.celsius;
+  document.getElementById('fahrenheit-value').textContent = temp.fahrenheit.toFixed(1);
+</script>
+
+
+
+
+<!-- davaleba 2 -->
+ <!-- rectangle.html -->
+<div class="rectangle-block">
+  <h2>📐 Rectangle</h2>
+  <p>Width: <span id="width"></span> px</p>
+  <p>Height: <span id="height"></span> px</p>
+  <p>Area: <span id="area"></span> px²</p>
+</div>
+
+<style>
+  .rectangle-block {
+    border: 2px dashed #2ecc71;
+    padding: 16px;
+    border-radius: 10px;
+    width: 250px;
+    background: #e8f8f5;
+    margin-bottom: 20px;
+  }
+</style>
+
+<script>
+  class Rectangle {
+    set width(w) {
+      this._width = w;
+    }
+    set height(h) {
+      this._height = h;
+    }
+    get area() {
+      return this._width * this._height;
+    }
+    get width() {
+      return this._width;
+    }
+    get height() {
+      return this._height;
+    }
+  }
+  const rect = new Rectangle();
+  rect.width = 30;
+  rect.height = 40;
+  document.getElementById('width').textContent = rect.width;
+  document.getElementById('height').textContent = rect.height;
+  document.getElementById('area').textContent = rect.area;
+</script>
+
+
+
+<!-- dvaleba 3 -->
+<!-- user.html -->
+<div class="user-block">
+  <h2>👤 User</h2>
+  <p class="full-name" id="full-name"></p>
+</div>
+
+<style>
+  .user-block {
+    border: 2px solid #8e44ad;
+    padding: 16px;
+    border-radius: 10px;
+    background: #f5eef8;
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  .full-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a235a;
+  }
+</style>
+
+<script>
+  class User {
+    set firstName(name) {
+      this._firstName = name;
+    }
+    set lastName(surname) {
+      this._lastName = surname;
+    }
+    get fullName() {
+      return `${this._firstName} ${this._lastName}`;
+    }
+  }
+  const user = new User();
+  user.firstName = 'Nika';
+  user.lastName = 'Nika';
+  document.getElementById('full-name').textContent = user.fullName;
+</script>
+
+
+
+<!-- davaleba 4 -->
+<!-- bank-account.html -->
+<div class="bank-block">
+  <h2>🏦 Bank Account</h2>
+  <p>Balance: <span id="balance"></span> ₾</p>
+  <input type="number" id="deposit" placeholder="Amount" />
+  <button onclick="updateBalance()">Deposit</button>
+</div>
+
+<style>
+  .bank-block {
+    border: 2px solid #f39c12;
+    padding: 16px;
+    border-radius: 10px;
+    background: #fef9e7;
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
+  input, button {
+    margin-top: 10px;
+    padding: 6px;
+    width: 100px;
+  }
+</style>
+
+<script>
+  class BankAccount {
+    #balance = 0;
+
+    set balance(amount) {
+      if (amount > 0) {
+        this.#balance += amount;
+      }
+    }
+
+    get balance() {
+      return this.#balance;
+    }
+  }
+  const account = new BankAccount();
+  account.balance = 100; // initial deposit
+  document.getElementById('balance').textContent = account.balance;
+  function updateBalance() {
+    const amount = parseFloat(document.getElementById('deposit').value);
+    account.balance = amount;
+    document.getElementById('balance').textContent = account.balance;
+    document.getElementById('deposit').value = '';
+  }
+</script>
+
+
+
+<!-- davaleba 5 -->
+<!-- product.html -->
+<div class="product-block">
+  <h2>🛍 Product</h2>
+  <p>Original Price: <span id="price"></span> ₾</p>
+  <p>Discount: <span id="discount"></span>%</p>
+  <p class="final">Final Price: <span id="final-price"></span> ₾</p>
+</div>
+
+<style>
+  .product-block {
+    border: 2px solid #c0392b;
+    padding: 16px;
+    border-radius: 10px;
+    background: #f9ebea;
+    width: 250px;
+  }
+  .final {
+    font-weight: bold;
+    color: #c0392b;
+  }
+</style>
+
+<script>
+  class Product {
+    set price(p) {
+      this._price = p;
+    }
+    set discount(d) {
+      this._discount = d;
+    }
+    get finalPrice() {
+      return this._price - (this._price * this._discount / 100);
+    }
+
+    get price() {
+      return this._price;
+    }
+
+    get discount() {
+      return this._discount;
+    }
+  }
+  const product = new Product();
+  product.price = 200;
+  product.discount = 15;
+  document.getElementById('price').textContent = product.price;
+  document.getElementById('discount').textContent = product.discount;
+  document.getElementById('final-price').textContent = product.finalPrice.toFixed(2);
+</script>

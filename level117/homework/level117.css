@@ -1,0 +1,42 @@
+/* davaleba 4 */
+/*  Linear Gradient (სხვადასხვა მიმართულებით) */
+/* თხელი ლურჯიდან თეთრამდე ლინირებული გრადიენტი ზედა ნაწილიდან ქვემოთ */
+.linear-gradient-vertical {
+  background: linear-gradient(to bottom, #4facfe, #00f2fe);
+  height: 150px;
+  width: 300px;
+}
+
+/* მარჯვნიდან მარცხნივ */
+.linear-gradient-horizontal {
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  height: 150px;
+  width: 300px;
+}
+
+/* კუთხეში (მარჯვენა ქვედა კუთხე) */
+.linear-gradient-diagonal {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 150px;
+  width: 300px;
+}
+
+
+
+/* Radial Gradient (სფეროები ცენტრიდან) */
+/* ცენტრალური რადიუსი თეთრიდან ლურჯამდე */
+.radial-gradient {
+  background: radial-gradient(circle, #ffecd2 0%, #fcb69f 100%);
+  height: 150px;
+  width: 300px;
+}
+
+/* ელიფსური რადიუსი (ცენტრიდან გარეთ) */
+.radial-gradient-ellipse {
+  background: radial-gradient(ellipse at center, #a1c4fd 0%, #c2e9fb 100%);
+  height: 150px;
+  width: 300px;
+}
+
+
+
