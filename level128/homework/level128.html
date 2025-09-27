@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>API მაგალითები</title>
+</head>
+<body>
+  <h1>API დავალებები</h1>
+
+  <h2>1) Post (id=1) Console-ში</h2>
+  <button onclick="getPost()">Post #1</button>
+
+  <h2>2) User-ების სახელები Console-ში</h2>
+  <button onclick="getUserNames()">User Names</button>
+
+  <h2>3) User ID=5 Email Console-ში</h2>
+  <button onclick="getUserEmail()">User #5 Email</button>
+
+  <h2>4) User-ების სია (name + email) გვერდზე</h2>
+  <div id="user-list" style="padding:10px; border:1px solid #ccc; margin-bottom:20px;"></div>
+  <button onclick="showUsers()">User List</button>
+
+  <h2>5) ძაღლის სურათი ღილაკზე დაჭერით</h2>
+  <button onclick="getDog()">ძაღლის სურათი</button>
+  <br><br>
+  <img id="dog" src="" alt="dog" width="300">
+
+  <h2>6) Fetch Data (W3Schools მაგალითის სტილში)</h2>
+  <button onclick="loadData()">Fetch Example</button>
+  <pre id="output"></pre>
+
+  <script src="./level128.js"></script>
+</body>
+</html>

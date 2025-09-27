@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Posts — JSONPlaceholder</title>
+  <link rel="stylesheet" href="./level129.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>JSONPlaceholder — Posts</h1>
+        <p>რემბოგი რომლითაც ჩამოტვირთულია: <span id="count">—</span></p>
+      </div>
+      <div class="controls">
+        <input id="search" class="search" placeholder="ეძებე სათაურით ან ტექსტით..." />
+        <select id="perPage" class="per-page" title="პოსტი გვერდზე">
+          <option value="6">6 / გვერდი</option>
+          <option value="9" selected>9 / გვერდი</option>
+          <option value="12">12 / გვერდი</option>
+        </select>
+      </div>
+    </header>
+
+    <div id="status" class="loader small">იტვირთება...</div>
+    <div id="grid" class="grid" aria-live="polite"></div>
+    <div class="pager" id="pager"></div>
+  </div>
+
+  <script src="./level129.js"></script>
+</body>
+</html>
