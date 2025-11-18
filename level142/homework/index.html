@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Order Summary</title>
+  <style>
+    :root{
+      --bg:#e9efff;
+      --card:#ffffff;
+      --accent:#4b37ff;
+      --muted:#7b8190;
+      --pill:#f2f5ff;
+    }
+    *{box-sizing:border-box;font-family:Inter, system-ui, Arial;}
+    body,html{height:100%;margin:0;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:20px;}
+    .card{
+      width:100%;max-width:360px;background:var(--card);border-radius:16px;box-shadow:0 12px 30px rgba(48,63,159,0.12);overflow:hidden;
+    }
+    .hero{
+      height:120px;background:linear-gradient(180deg,#3b24d6 0%, #5a46ff 100%);display:flex;align-items:center;justify-content:center;
+    }
+    .hero img{height:72px;opacity:0.95;}
+    .content{padding:20px;text-align:center;}
+    h1{margin:0;font-size:20px;}
+    p.desc{color:var(--muted);font-size:13px;margin:8px 0 18px;}
+    .plan{
+      display:flex;align-items:center;justify-content:space-between;background:var(--pill);padding:12px;border-radius:10px;margin-bottom:16px;
+    }
+    .plan-left{display:flex;gap:12px;align-items:center;text-align:left}
+    .avatar{width:44px;height:44px;border-radius:50%;background:#dfe7ff;}
+    .plan-name{font-weight:600;font-size:14px}
+    .plan-sub{font-size:12px;color:var(--muted)}
+    .change{font-size:13px;color:var(--accent);background:none;border:none;cursor:pointer}
+    .btn{
+      display:block;width:100%;padding:14px;border-radius:10px;border:0;background:var(--accent);color:#fff;font-weight:700;cursor:pointer;
+      box-shadow:0 8px 18px rgba(75,55,255,0.18);
+    }
+    .cancel{margin-top:12px;background:none;border:0;color:var(--muted);cursor:pointer;font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="card" role="region" aria-label="Order Summary">
+    <div class="hero">
+      <!-- simple inline svg illustration -->
+      <svg width="80" height="80" viewBox="0 0 24 24" fill="none" aria-hidden>
+        <path d="M12 2a5 5 0 015 5v1l3 1v6a5 5 0 01-5 5H9a5 5 0 01-5-5V8l3-1V7a5 5 0 015-5z" fill="#fff" opacity="0.12"/>
+        <circle cx="12" cy="12" r="3" fill="#fff" />
+      </svg>
+    </div>
+
+    <div class="content">
+      <h1>Order Summary</h1>
+      <p class="desc">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+      <div class="plan">
+        <div class="plan-left">
+          <div class="avatar" aria-hidden></div>
+          <div>
+            <div class="plan-name">Annual Plan</div>
+            <div class="plan-sub">$59.99/year</div>
+          </div>
+        </div>
+        <button class="change" id="changeBtn">Change</button>
+      </div>
+
+      <button class="btn" id="payBtn">Proceed to Payment</button>
+      <button class="cancel" id="cancelBtn">Cancel Order</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
