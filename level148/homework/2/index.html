@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog Preview Card | React</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(30, 38%, 92%);
+        font-family: "Outfit", sans-serif;
+      }
+
+      .card {
+        max-width: 350px;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+      }
+
+      .card img.header {
+        width: 100%;
+        display: block;
+      }
+
+      .content {
+        padding: 24px;
+      }
+
+      .tag {
+        display: inline-block;
+        background: hsl(47, 88%, 63%);
+        color: #000;
+        font-weight: 700;
+        font-size: 12px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        margin-bottom: 16px;
+      }
+
+      .date {
+        font-size: 13px;
+        color: hsl(0, 0%, 20%);
+        margin-bottom: 14px;
+      }
+
+      h1 {
+        font-size: 20px;
+        margin: 0 0 16px;
+        color: #000;
+        cursor: pointer;
+      }
+
+      h1:hover {
+        color: hsl(47, 88%, 63%);
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: hsl(0, 0%, 40%);
+        margin-bottom: 24px;
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+      }
+
+      .author img {
+        width: 36px;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+
+      .author span {
+        font-weight: 700;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
