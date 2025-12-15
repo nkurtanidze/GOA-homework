@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>სახელების ფილტრი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 6px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>სახელების ძებნა</h2>
+
+    <input
+        type="text"
+        placeholder="შეიყვანე ტექსტი..."
+        oninput="handleInput(event)"
+    />
+
+    <ul id="nameList"></ul>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
