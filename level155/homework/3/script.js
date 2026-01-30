@@ -1,13 +1,25 @@
-let isVisible = true;
+const { useState } = React;
 
-        function toggleText() {
-            const text = document.getElementById("text");
+        function Counter() {
+            const [count, setCount] = useState(0);
 
-            if (isVisible === true) {
-                text.style.display = "none";
-                isVisible = false;
-            } else {
-                text.style.display = "block";
-                isVisible = true;
-            }
+            return (
+                <div>
+                    <h1>{count}</h1>
+
+                    <button onClick={() => setCount(count + 1)}>
+                        +1
+                    </button>
+
+                    <button onClick={() => setCount(count - 1)}>
+                        -1
+                    </button>
+
+                    <button onClick={() => setCount(0)}>
+                        Reset
+                    </button>
+                </div>
+            );
         }
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<Counter />);

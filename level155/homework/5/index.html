@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Random Number Game</title>
+    <title>useState Input Example</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <style>
         body {
             font-family: Arial;
-            text-align: center;
-            margin-top: 100px;
+            padding: 40px;
         }
 
-        button {
-            padding: 10px 25px;
+        input {
+            padding: 10px;
             font-size: 18px;
-            cursor: pointer;
+            width: 300px;
         }
 
-        #result {
+        p {
             margin-top: 20px;
-            font-size: 24px;
+            font-size: 20px;
+            color: green;
         }
     </style>
 </head>
 <body>
 
-    <h2>Click the button</h2>
-    <button onclick="generateNumber()">Click me</button>
-    <div id="result"></div>
-    <script src="./script.js"></script>
-
+<div id="root"></div>
+<script type="text/babel" src="./script.js"></script>
 </body>
 </html>

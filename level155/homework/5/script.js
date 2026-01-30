@@ -1,11 +1,18 @@
-function generateNumber() {
-            let randomNumber = Math.floor(Math.random() * 10) + 1;
+function App() {
+    const [text, setText] = React.useState("");
 
-            let result = document.getElementById("result");
+    return (
+        <div>
+            <h2>ჩაწერე ტექსტი:</h2>
 
-            if (randomNumber === 7) {
-                result.textContent = randomNumber + " → You won!";
-            } else {
-                result.textContent = randomNumber;
-            }
-        }
+            <input
+                type="text"
+                placeholder="აქ ჩაწერე..."
+                onChange={(e) => setText(e.target.value)}
+            />
+
+            <p>შეყვანილი ტექსტი: {text}</p>
+        </div>
+    );
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);

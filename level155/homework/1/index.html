@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="ka">
 <head>
-    <meta charset="UTF-8">
-    <title>Counter</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-        }
+  <meta charset="UTF-8" />
+  <title>React Counter</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-        h1 {
-            font-size: 60px;
-        }
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
 
-        button {
-            font-size: 20px;
-            padding: 10px 25px;
-            cursor: pointer;
-        }
-    </style>
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
-    <h1 id="counter">0</h1>
-    <button onclick="increase()">+1</button>
-    <script src="./script.js"></script>
+  <div id="root"></div>
+  <script type="text/babel" src="./script.js"></script>
 
 </body>
 </html>

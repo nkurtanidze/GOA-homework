@@ -2,33 +2,12 @@
 <html lang="ka">
 <head>
     <meta charset="UTF-8">
-    <title>ON / OFF ღილაკი</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #f0f0f0;
-            font-family: Arial;
-        }
-
-        button {
-            padding: 20px 50px;
-            font-size: 24px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            color: white;
-            background-color: red;
-            transition: 0.3s;
-        }
-    </style>
+    <title>Show / Hide Text</title>
 </head>
 <body>
 
-    <button id="toggleBtn">OFF</button>
-
+    <h2 id="text">ეს ტექსტი ჩანს</h2>
+    <button onclick="toggleText()">დამალე / აჩვენე</button>
     <script src="./script.js"></script>
 
 </body>

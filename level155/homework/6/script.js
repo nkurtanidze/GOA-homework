@@ -1,11 +1,7 @@
-let count = 0;
-
-        function increase() {
-            if (count < 10) {
-                count++;
-                document.getElementById("counter").textContent = count;
-                document.getElementById("message").textContent = "";
-            } else {
-                document.getElementById("message").textContent = "Limit reached";
-            }
-        }
+let hourState = new Date().getHours();
+    let text = document.getElementById("text");
+    if (hourState < 12) {
+        text.textContent = "Good Morning";
+    } else {
+         text.textContent = "Good Evening";
+    }
