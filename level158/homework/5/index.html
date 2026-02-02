@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .post {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        .post h3 {
+            margin: 0 0 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>🔍 პოსტების ძებნა title-ის მიხედვით</h2>
+
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="ჩაწერე პოსტის სათაური..."
+    >
+
+    <div id="posts"></div>
+    <script src="./script.js"></script>
+
+</body>
+</html>

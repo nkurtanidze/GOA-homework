@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        select {
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+
+        .post {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        .post h3 {
+            margin: 0 0 5px 0;
+        }
+
+        .post small {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Posts</h2>
+
+    <select id="userFilter">
+        <option value="all">All</option>
+        <option value="1">User 1</option>
+        <option value="2">User 2</option>
+        <option value="3">User 3</option>
+    </select>
+
+    <div id="posts"></div>
+    <script src="./script.js"></script>
+
+</body>
+</html>
